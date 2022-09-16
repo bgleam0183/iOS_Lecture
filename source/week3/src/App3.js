@@ -21,24 +21,25 @@ function App3() {
         },
         {
             name: 'Bibimbap',
-            image: 'http://cdn-image.myrecipes.com/sites/default/files'
+            image: 'http://cdn-image.myrecipes.com/sites/default/files/styles/4_3_horizontal_-_1200x900/public/image/recipes/ck/12/03/bibimbop-ck-x.jpg?itok=RoXlp6Xb.jpg'
         },
         {
             name: 'Doncasu',
-            image: 'http://aeriskitchen.com/wp-content/uploads/2008/09/kimchi_bokkeumbap_02-.jpg'
-        },
+            image: 'https://s3-media3.fl.yelpcdn.com/bphoto/7F9eTTQ_yxaWIRytAu5feA/ls.jpg' },
         {
             name: 'Kimbap',
-            image: 'http://aeriskitchen.com/wp-content/uploads/2008/09/kimchi_bokkeumbap_02-.jpg'
+            image: 'http://cdn2.koreanbapsang.com/wp-content/uploads/2012/05/DSC_1238r-e1454170512295.jpg'
         },
-    ]
+    ];
 
     return (
         <div>
             <h1>Food</h1>
-            {foodILike.map(dish => (
-                <Food name = {dish.name} picture = {dish.image} />
-            ))}
+            {
+                foodILike.map(dish => (
+                        <Food name = {dish.name} picture = {dish.image} />
+                ))
+            }
         </div>
     );
 }
